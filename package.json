@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thomascupchurch/portfolio-generator/issues"
   },
-  "homepage": "https://github.com/thomascupchurch/portfolio-generator#readme"
+  "homepage": "https://github.com/thomascupchurch/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
 }
