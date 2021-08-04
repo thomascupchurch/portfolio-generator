@@ -34,9 +34,10 @@ return inquirer.prompt([
     ]);
 };
 
-    promptUser().then(answers => console.log(answers));
+    
 
-    const promptProject = () => {
+    const promptProject = portfolioData => {
+        portfolioData.projects = [];
         console.log(`
     =================
     Add a New Project
@@ -78,3 +79,8 @@ return inquirer.prompt([
         }
     ]);
     };
+
+    promptUser()
+    .then(answers => console.log(answers))
+    .then(promptProject)
+    .then(projectAnswers => console.log(projectAnswers));
